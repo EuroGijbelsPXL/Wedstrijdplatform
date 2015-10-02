@@ -1,0 +1,2 @@
+# Wedstrijdplatform
+Een flexibel wedstrijdplatform! 
