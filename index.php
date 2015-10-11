@@ -5,7 +5,7 @@
 	include "html/header.html";
   ?>
 </head>
-<body>
+<body ng-app>
 <?php
 	include "php/home.php";
   ?>
