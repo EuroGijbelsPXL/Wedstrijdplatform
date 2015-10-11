@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+<?php
+	include "html/header.html";
+  ?>
+</head>
 <body>
+<?php
+	include "php/home.php";
+  ?>
 
-<h1>Testpagina</h1>
-
-<p>My first paragraph.</p>
-
+<?php
+	include "html/footer.html";
+  ?>
 </body>
 </html>
