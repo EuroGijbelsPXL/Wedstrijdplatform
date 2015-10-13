@@ -7,6 +7,7 @@
 </head>
 <body ng-app>
 <?php
+	include "html/nav.html";
 	include "php/home.php";
   ?>
 
