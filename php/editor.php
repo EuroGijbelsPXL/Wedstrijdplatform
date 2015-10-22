@@ -122,7 +122,7 @@
 			<div class="col-md-8 col-md-offset-2">
 			<h1>wysihtml5 - Advanced Editor Example</h1>
 
-			<form>
+			<form method="POST" action="">
 				<div id="toolbar" style="display: none;">
 					<a data-wysihtml5-command="bold" title="CTRL+B">bold</a> |
 					<a data-wysihtml5-command="italic" title="CTRL+I">italic</a> |
@@ -136,7 +136,7 @@
     				<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a> |
     				<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a> |
     				<a data-wysihtml5-command="insertSpeech">speech</a>
-    				<a data-wysihtml5-action="change_view">switch to html view</a>
+    				<a data-wysihtml5-action="change_view">switch view</a>
     
 					<div data-wysihtml5-dialog="createLink" style="display: none;">
 						<label>
@@ -163,10 +163,21 @@
     				</div>
     
 				</div>
-				<textarea id="textarea" placeholder="Enter text ..."></textarea>
-				<br><input type="reset" value="Reset form!">
+				<textarea id="textarea" name="edittextarea" placeholder="Enter text ..."></textarea>
+				<br><!--<input type="reset" value="Reset form!">--><input type="submit" name="opslaan" value="Opslaan">
 			</form>
 		
+		
+			<br/>
+			<?php
+				if(isset($_POST['opslaan'])){
+					echo $_POST['edittextarea']; //nog controleren op safe-input etc.
+					//dit moet dan worden weggeschreven naar de database.
+					//Op de pagina waar deze tekst nodig is, moet deze dan dynamisch worden geladen uit de database.
+					
+					//Is het nuttig om hier iets met Angular te doen? Ik denk het niet aangezien het toch in de database moet worden opgeslagen.
+				}
+			?>
 
 			</div>		
 		</div>
