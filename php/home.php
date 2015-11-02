@@ -1,17 +1,18 @@
-<div class="container-fluid ">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-
 		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 		<div class="row">
 		  <div class="col-md-8 border">
 			<div class="row">
 				<div class="col-md-12  border">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ex non tortor dapibus, ac condimentum diam tempus. Nunc id bibendum mi. Integer vel semper erat, id porta odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vitae arcu ut elit aliquam feugiat. Vivamus sollicitudin velit eget convallis molestie. In quis nunc suscipit, consectetur magna sed, venenatis diam.
+				<h1>Speluitleg</h1>
+				<p ng-repeat="uitleg in uitleg" > {{uitleg.spel}}</p>
+				</div>
 
-Donec non leo id lacus gravida dapibus et eu metus. Pellentesque finibus porttitor quam ac tempor. Vestibulum tincidunt ullamcorper elit quis dapibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sodales, diam nec blandit ullamcorper, justo urna elementum mauris, faucibus rutrum augue leo venenatis est. Phasellus pellentesque nibh justo, consequat venenatis arcu tristique nec. Pellentesque accumsan bibendum tempus. Donec purus augue, porta sit amet placerat quis, mattis eu tortor. Donec lacinia fringilla dolor eu suscipit. Maecenas at eleifend massa. Integer aliquet justo nec ante eleifend, vitae luctus sem faucibus. Nullam enim dolor, suscipit vel bibendum sed, vulputate quis lacus. Phasellus vel commodo tellus. Duis molestie convallis tellus sed elementum. Proin porttitor lorem vitae nibh dignissim lobortis.
-					</p>
+				<h1>Meerdere views in een app</h1>
+				<div ng-view>
+					<!-- Hierin worden dynamisch de Views geladen -->
 				</div>
 			</div>
 		
@@ -22,12 +23,12 @@ Donec non leo id lacus gravida dapibus et eu metus. Pellentesque finibus porttit
 							<div class="ch-item ch-img-1 img-responsive">
 								<div class="ch-info">
 									<div class="col-md-6 col-md-offset-3">
-									<form class="form-signin">
+									<form class="form-signin" role="form" method="post" action="index.php">
 										<h2 class="form-signin-heading">Login</h2>
 										<label for="inputEmail" class="sr-only">Email adres</label>
-										<input type="email" id="inputEmail" class="form-control" placeholder="Email adres" required autofocus>
+										<input name="inputEmail" type="email" id="inputEmail" class="form-control" placeholder="Email adres" required autofocus>
 										<label for="inputPassword" class="sr-only">Wachtwoord</label>
-										<input type="password" id="inputPassword" class="form-control" placeholder="Wachtwoord" required>
+										<input name="inputPassword" type="password" id="inputPassword" class="form-control" placeholder="Wachtwoord" required>
 										<div class="checkbox">
 										  <label>
 											<input type="checkbox" value="remember-me"> Mij onthouden
@@ -48,22 +49,11 @@ Donec non leo id lacus gravida dapibus et eu metus. Pellentesque finibus porttit
 		  </div>
 		  <div class="col-md-4 border">
 			<div class="row">
-				<div class="col-xs-4 col-sm-4 col-md-12 border">
-					<h1 class="prijsTitel">Hoofdprijs</h1>
-					<img src="assets/img/fruit/fordShelby.jpg" class="img-responsive banner prijs">
+				<div  ng-repeat="prijs in prijzen" class="col-xs-4 col-sm-4 col-md-12 border">
+					<h1 class="prijsTitel">{{prijs.type}}</h1>
+					<img src="assets/img/fruit/{{prijs.afb}}" class="img-responsive banner prijs">
 				</div>
-			
-			
-				<div class="col-xs-4 col-sm-4 col-md-12 border">
-					<h1 class="prijsTitel">Premiumprijs</h1>
-					<img src="assets/img/fruit/vespaGeel.jpg" class="img-responsive banner prijs">
-				</div>
-		
-			
-				<div class="col-xs-4 col-sm-4 col-md-12 border">
-					<h1 class="prijsTitel">Troostprijs</h1>
-					<img src="assets/img/fruit/hotwheels.jpg" class="img-responsive banner prijs">
-				</div>
+
 			</div>	
 		  </div>
 		</div>

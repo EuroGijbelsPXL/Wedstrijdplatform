@@ -1,12 +1,12 @@
 <?php
 /*! Medoo 0.9.8.3 - Copyright 2015, Angel Lai - MIT license - http://medoo.in */
 class medoo{
-	protected $database_type = 'mssql';
+	protected $database_type = 'mysql';
 	protected $charset = 'utf8';
-	protected $database_name = 'Prominos_SchachtenBoek';
-	protected $server = 'ht7gjct2fd.database.windows.net,1433';
-	protected $username = 'MySQLAdmin';
-	protected $password = 'Coxie9237';
+	protected $database_name = 'egtest';
+	protected $server = 'localhost';
+	protected $username = 'root';
+	protected $password = '';
 	protected $database_file;
 	protected $socket;
 	protected $port;
