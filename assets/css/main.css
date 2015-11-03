@@ -4,6 +4,9 @@ body{
 .border{
 		/*border: 1px solid black;*/
 }
+.borderright{
+		border-right: 2px solid black;
+}
 .banner{
 	width:100%;
 	height: 200px;
@@ -206,5 +209,28 @@ body{
 .form-signin{
 	margin-top:50%;
 }
+
+/* HOME PAGINA */
+/* PRIJZEN PAGINA */
+.prijzen{
+	padding: 20px;
+}
+.prijs_img{
+	padding: 15px;
+}
+/* RECEPTEN PAGINA */
+.recepten{
+	margin-bottom: 50px;
+}
+.recept_img{
+	width: 200px;
+	padding: 30px;
+}
+.lijst{
+	padding-left: 7%;
+}
+
+/* PROFIEL PAGINA */
+/* CONTACT PAGINA */
 
 

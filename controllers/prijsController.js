@@ -6,5 +6,10 @@
 		
 		function prijsController() {
 					this.msg = 'Hello vanuit de prijsController';
+					
+					this.prijzen = 	[{'type': 'Hoofdprijs', 'omschrijving': 'De omschrijving van de hoofdprijs','afb': 'fordShelby.jpg', 'aantal' : 1},
+							{'type': 'Premiumprijs', 'omschrijving': 'De omschrijving van de premiumprijs', 'afb': 'vespaGeel.jpg', 'aantal' : 10},
+							{'type': 'Troostprijs', 'omschrijving': 'De omschrijving van de troostprijs','afb': 'hotwheels.jpg', 'aantal' : 250},
+							{'type': 'Extra prijs', 'omschrijving': 'De omschrijving van de extra prijs','afb': 'hotwheels.jpg', 'aantal' : 1000}];
 				}
 })();
