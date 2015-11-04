@@ -4,8 +4,8 @@ body{
 .border{
 		/*border: 1px solid black;*/
 }
-.borderright{
-		border-right: 2px solid black;
+.borderleft{
+		border-left: 2px solid black;
 }
 .banner{
 	width:100%;
@@ -231,6 +231,15 @@ body{
 }
 
 /* PROFIEL PAGINA */
+.profiel_dim{
+	margin-top: 25px;
+}
+.profiel_nav{
+	padding-right: 20px;
+}
+.select-size{
+	font-size: 20px;
+}
 /* CONTACT PAGINA */
 
 
