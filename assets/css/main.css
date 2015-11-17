@@ -1,6 +1,8 @@
-/*body{
-	background-color: #F0FFFF;
-}*/
+body{
+	/*background-color: #F0FFFF;*/
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
 .centered{
 	text-align: center;
 }
@@ -226,6 +228,7 @@
 	 body{
 	background-color: green;
 }
+
 }
 
 @media (min-width: 1000px) and (max-width: 1400px)
@@ -233,9 +236,7 @@
 	 body{
 	background-color: blue;
 }
-.navbar-right{
-	padding-right: 9%;
-}
+
 
 
 }
@@ -246,9 +247,7 @@
 	background-color: yellow;
 	
 }
-.navbar-right{
-	padding-right: 10%;
-}
+
 
 
 
