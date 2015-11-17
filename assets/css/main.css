@@ -1,5 +1,8 @@
-body{
+/*body{
 	background-color: #F0FFFF;
+}*/
+.centered{
+	text-align: center;
 }
 .border{
 		/*border: 1px solid black;*/
@@ -9,10 +12,6 @@ body{
 }
 .banner{
 	width:100%;
-	height: 200px;
-}
-.centered{
-	margin-left: 40%;
 }
 .nav-background{
 
@@ -21,18 +20,21 @@ body{
 	margin-bottom: -20px;
 }
 .navbar-left{
-	padding-top: 20px;
-	font-size: 2em;
+	padding-top: 15px;
+	font-size: 140%;
 }
 .navbar-right{
 	padding-top: 15px;
-	padding-right: 50px;
-	font-size: 1.2em;
+	font-size: 110%;
 }
-
+.navbar-toggle{
+	margin-top:12px;
+	padding:20px 25%;
+}
 .navbar-brand{
 	padding: 0;
 	margin: 0;
+	margin-left: -35px;
 }
 .icon-bar {
   color: white;
@@ -52,36 +54,6 @@ body{
 #logoImg{
 	height: 80px;
 	width: 100px;
-}
-
-
-
-@media (max-width: 320px)
-{
- /*body{
-	background-color: red;
-}*/
-}
-
-@media (min-width: 321px) and (max-width: 600px)
-{
-	 /*body{
-	background-color: green;
-}*/
-}
-
-@media (min-width: 601px) and (max-width: 910px)
-{
-	 /*body{
-	background-color: blue;
-}*/
-}
-
-@media (min-width: 910px)
-{
- /*body{
-	background-color: yellow;
-}*/
 }
 
 /* Circle "Speel mee"*/
@@ -241,5 +213,45 @@ body{
 	font-size: 20px;
 }
 /* CONTACT PAGINA */
+
+@media (max-width: 320px)
+{
+ body{
+	background-color: red;
+}
+}
+
+@media (min-width: 321px) and (max-width: 1000px)
+{
+	 body{
+	background-color: green;
+}
+}
+
+@media (min-width: 1000px) and (max-width: 1400px)
+{
+	 body{
+	background-color: blue;
+}
+.navbar-right{
+	padding-right: 9%;
+}
+
+
+}
+
+@media (min-width: 1400px)
+{
+ body{
+	background-color: yellow;
+	
+}
+.navbar-right{
+	padding-right: 10%;
+}
+
+
+
+}
 
 

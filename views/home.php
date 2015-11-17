@@ -11,9 +11,7 @@
 				</p>
 				<h1>Speluitleg</h1>
 				<p> {{homeCtrl.uitleg}}</p>
-				</div>
-
-				
+				</div>			
 			</div>
 		
 			<div class="row">
