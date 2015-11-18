@@ -3,6 +3,61 @@ body{
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
+/* Effect 21: borders slight translate */
+.cl-effect-21 li {
+	color: #237546;
+	font-weight: 1;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-21 li::before,
+.cl-effect-21 li::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: black;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 li::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 li::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 li:hover,
+.cl-effect-21 li:focus {
+	color: #fff;
+}
+
+.cl-effect-21 li:hover::before,
+.cl-effect-21 li:focus::before,
+.cl-effect-21 li:hover::after,
+.cl-effect-21 li:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
 .centered{
 	text-align: center;
 }
@@ -15,6 +70,14 @@ body{
 .banner{
 	width:100%;
 }
+.nav li{
+	
+	padding: 15px 0px;
+}
+.nav li:hover{
+	
+
+}
 .nav-background{
 
 }
@@ -22,21 +85,38 @@ body{
 	margin-bottom: -20px;
 }
 .navbar-left{
-	padding-top: 15px;
-	font-size: 140%;
+	padding-top: 0px;
+
 }
 .navbar-right{
-	padding-top: 15px;
-	font-size: 110%;
+	padding-top: 0px;
+
 }
 .navbar-toggle{
 	margin-top:12px;
-	padding:20px 25%;
+	padding:18px 30px;
 }
 .navbar-brand{
 	padding: 0;
 	margin: 0;
 	margin-left: -35px;
+}
+
+.dutch_flag:hover{
+	background:url(../img/Taal/Belgium_flat.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}
+.dutch_flag:hover a{
+	z-index:-2000;
+}
+.french_flag:hover{
+	background:url(../img/Taal/FRANCE.gif); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}
+.french_flag:hover a{
+	z-index:-2000;
 }
 .icon-bar {
   color: white;
@@ -61,7 +141,7 @@ body{
 /* Circle "Speel mee"*/
 
 .ch-grid {
-	margin: 20px 0 0 0;
+	margin: 15px 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;
@@ -221,12 +301,26 @@ body{
  body{
 	background-color: red;
 }
+.navbar-left{
+	font-size: 140%;
+}
+.navbar-right{
+	font-size: 110%;
+	
+}
 }
 
 @media (min-width: 321px) and (max-width: 1000px)
 {
 	 body{
 	background-color: green;
+}
+.navbar-left{
+	font-size: 140%;
+}
+.navbar-right{
+	font-size: 110%;
+	padding-right: 0%;
 }
 
 }
@@ -236,7 +330,12 @@ body{
 	 body{
 	background-color: blue;
 }
-
+.navbar-left{
+	font-size: 180%;
+}
+.navbar-right{
+	font-size: 130%;
+}
 
 
 }
@@ -244,8 +343,13 @@ body{
 @media (min-width: 1400px)
 {
  body{
-	background-color: yellow;
-	
+	background-color: yellow;	
+}
+.navbar-left{
+	font-size: 200%;
+}
+.navbar-right{
+	font-size: 150%;
 }
 
 
