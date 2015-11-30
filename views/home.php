@@ -1,16 +1,14 @@
-		<div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
-		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
-		<div class="row">
-		  <div class="col-md-8 border">
+<div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+	<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+	<div class="row">
+		<div class="col-md-8 border">
 			<div class="row">
-
 				<div class="col-md-10 col-md-offset-1  border">
-				<h1>Speluitleg</h1>
-				<p> {{homeCtrl.uitleg}}</p>
+					<h1>Speluitleg</h1>
+					<p> {{homeCtrl.uitleg}}</p>
 				</div>			
 			</div>
-		
-			<div class="row">
+			<div class="row hidden-xs">
 				<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1  border">
 					<ul class="ch-grid">
 						<li>
@@ -18,11 +16,11 @@
 								<div class="ch-info">
 									<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
 										<form class="form-signin" role="form" method="post" action="index.php">
-											<h2 class="form-signin-heading">Login</h2>
+											<h1 class="form-signin-heading">Login</h1>
 											<label for="inputEmail" class="sr-only">Email adres</label>
-											<input name="inputEmail" type="email" id="inputEmail" class="form-control" placeholder="Email adres" required autofocus>
+											<input name="inputEmail" type="email" id="inputEmail" class="form-control login-control" placeholder="Email adres" required autofocus>
 											<label for="inputPassword" class="sr-only">Wachtwoord</label>
-											<input name="inputPassword" type="password" id="inputPassword" class="form-control" placeholder="Wachtwoord" required>
+											<input name="inputPassword" type="password" id="inputPassword" class="form-control login-control" placeholder="Wachtwoord" required>
 											<div class="checkbox">
 											  <label>
 												<input type="checkbox" value="remember-me"> Mij onthouden
@@ -31,7 +29,9 @@
 											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 										</form>
 									</div>
-										<p><a href="http://drbl.in/eOPF">Wachtwoord vergeten</a><a href="http://drbl.in/eOPF">Registreer</a></p>
+										<p><a href="http://drbl.in/eOPF">Wasssss</a></p>
+										<p><a href="http://drbl.in/eOPF">Wachtwoord vergeten</a></p>
+										<p><a href="http://drbl.in/eOPF">Registreer</a></p>
 								</div>
 							</div>
 						</li>
@@ -40,7 +40,7 @@
 			</div>
 			<div class="row">
 			</div>
-		  </div>
+		</div>
 		  <div class="border">
 			<div class="row">
 				<div  ng-repeat="prijs in homeCtrl.prijzen" class="col-xs-12 col-sm-4 col-md-4 border">
@@ -50,5 +50,4 @@
 			</div>	
 		  </div>
 		</div>
-
-	</div>		
+</div>		

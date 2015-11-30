@@ -1,9 +1,22 @@
+/*** BASIS CSS WEBSITE ***/
 body{
 	/*background-color: #F0FFFF;*/
 	overflow-y: scroll;
 	overflow-x: hidden;
+	width:100%;
 }
-/* Effect 21: borders slight translate */
+.centered{
+	text-align: center;
+}
+.border{
+		border: 1px solid black;
+}
+.borderleft{
+		border-left: 2px solid black;
+}
+/*** NAVIGATIE ***/
+
+/* Effect 21: borders slight translate - http://tympanus.net/Development/CreativeLinkEffects/ */
 .cl-effect-21 li {
 	color: #237546;
 	font-weight: 1;
@@ -57,15 +70,6 @@ body{
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
-}
-.centered{
-	text-align: center;
-}
-.border{
-		/*border: 1px solid black;*/
-}
-.borderleft{
-		border-left: 2px solid black;
 }
 .banner{
 	width:100%;
@@ -123,6 +127,19 @@ body{
   border-color: white;
   background-color: grey;
 }
+
+
+#logoImg{
+	height: 80px;
+	width: 100px;
+}
+
+.control-label{
+	font-size: 20px;
+}
+
+
+/* HOME PAGINA */
 .prijs{
 	height: 10%;
 	width: 60%;
@@ -132,12 +149,15 @@ body{
 .prijsTitel{
 	text-align: center;
 }
-
-#logoImg{
-	height: 80px;
-	width: 100px;
+/* Login */
+.login-control{
+		font-size:23px;
+		text-align: center;
+		width: 300px;
+		height: 50px;
+		margin-bottom: 20px;
+		border:1px solid;
 }
-
 /* Circle "Speel mee"*/
 
 .ch-grid {
@@ -251,9 +271,6 @@ body{
 .ch-item:hover .ch-info p {
 	opacity: 1;
 }
-.control-label{
-	font-size: 20px;
-}
 /*Speel mee knop*/ 
 
 .btn-speel{
@@ -263,8 +280,6 @@ body{
 .form-signin{
 	margin-top:50%;
 }
-
-/* HOME PAGINA */
 /* PRIJZEN PAGINA */
 .prijzen{
 	padding: 20px;

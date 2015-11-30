@@ -1,4 +1,4 @@
-		<div class="col-md-8 col-md-offset-2">
+	<div class="col-md-8 col-md-offset-2">
 		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 		<div class="row">
 		  <div class="col-md-8 border col-md-offset-3">
