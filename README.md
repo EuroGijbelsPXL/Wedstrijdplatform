@@ -4,6 +4,9 @@ Een flexibel wedstrijdplatform!
 
 
 #Git flow uitleg
+
+[Afbeelding logica] (http://jeffkreeftmeijer.com/images/gitflow.gif)
+
 ### Initialization
 
 To initialize a new repo with the basic branch structure, use:
