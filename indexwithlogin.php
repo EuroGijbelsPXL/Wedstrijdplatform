@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="wedstrijdPlatform" lang="en">
+<head>
+<?php
+	include "html/header.html";
+?>
+
+</head>
+<body onload="start();">
+
 <?php session_start();
                     require_once 'php/medoo.min.php';
                     $database = new medoo();
@@ -69,3 +79,5 @@
 						include "html/footer.html";
                     }
 ?>
+</body>
+</html>

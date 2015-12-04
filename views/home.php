@@ -29,9 +29,8 @@
 											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 										</form>
 									</div>
-										<p><a href="http://drbl.in/eOPF">Wasssss</a></p>
-										<p><a href="http://drbl.in/eOPF">Wachtwoord vergeten</a></p>
-										<p><a href="http://drbl.in/eOPF">Registreer</a></p>
+										<p><a href="">Wachtwoord vergeten</a></p>
+										<p><a href="">Registreer</a></p>
 								</div>
 							</div>
 						</li>
