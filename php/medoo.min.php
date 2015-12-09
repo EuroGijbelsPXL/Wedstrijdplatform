@@ -3,7 +3,7 @@
 class medoo{
 	protected $database_type = 'mysql';
 	protected $charset = 'utf8';
-	protected $database_name = 'egtest';
+	protected $database_name = 'wedstrijdplatformegrs';
 	protected $server = 'localhost';
 	protected $username = 'root';
 	protected $password = '';

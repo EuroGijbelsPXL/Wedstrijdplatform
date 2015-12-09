@@ -23,7 +23,7 @@
 											<input name="inputPassword" type="password" id="inputPassword" class="form-control login-control" placeholder="Wachtwoord" required>
 											<div class="checkbox">
 											  <label>
-												<input type="checkbox" value="remember-me"> Mij onthouden
+												<input type="checkbox" value="remember-me"> Mij onthouden </input>
 											  </label>
 											</div>
 											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
