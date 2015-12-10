@@ -23,7 +23,7 @@
 											</div>	
 											<div class="checkbox">
 											  <label>
-												<input type="checkbox" value="remember-me"> Mij onthouden
+												<input type="checkbox" value="remember-me"> Mij onthouden </input>
 											  </label>
 											</div>
 											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
@@ -31,6 +31,7 @@
 									</div>
 										<p><a href="#">Wachtwoord vergeten</a></p>
 										<p><a href="#">Registreer</a></p>
+
 								</div>
 							</div>
 						</li>
