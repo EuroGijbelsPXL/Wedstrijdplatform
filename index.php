@@ -2,7 +2,7 @@
 <html ng-app="wedstrijdPlatform" lang="en">
 <head>
 <?php
-	include "html/header.html";
+	include "assets/html/header.html";
 ?>
 
 </head>
@@ -18,7 +18,7 @@
 	--> GAAT NIET! DE VIEWS WORDEN DYNAMISCH INGELADEN BINNEN INDEX.PHP!
 */
 					session_start();
-                    require_once 'php/medoo.min.php';
+                    require_once 'assets/php/medoo.min.php';
                     $database = new medoo();
 					
 					require_once 'assets/php/functies.php';
@@ -36,14 +36,14 @@
 								//print_r($user);
 	
  
-                        include 'html/nav.html';
-						include 'html/login_success.html';						
-						include 'php/home.php';
+                        include 'assets/html/nav.html';
+						include 'assets/html/login_success.html';						
+						include 'phpAPI/home.php';
 						
 						//header("Location: /wedstrijdplatform/#/spelpagina"); //dit mag hier niet, zorgt voor eindeloze redirect ( na post ziet hij dat er al een sessie is dus komt hij hier en gaat hij nogmaals doorverwijzen
 						//naar spelpagina, en dit blijft zich herhalen, dit stond hier omdat je als je al ingelogd bent, dat je automatisch de spelpagina ziet en niet opnieuw moet inloggen)
 						
-						include "html/footer.html";
+						include "assets/html/footer.html";
 						
 						//session_destroy(); //moet weg, staat hier enkel voor test
                     }
@@ -90,31 +90,31 @@
 								header("Location: /wedstrijdplatform/#/spelpagina");
 							}
 							else{
-								include 'html/nav.html';
-								include 'html/failed_login.html';
-								include 'php/home.php';
+								include 'assets/html/nav.html';
+								include 'assets/html/failed_login.html';
+								include 'phpAPI/home.php';
 							}
 	
                         }
                         else
                         {
-                            include 'html/nav.html';
-                            include 'html/failed_login.html';
-							include 'php/home.php';
+                            include 'assets/html/nav.html';
+                            include 'assets/html/failed_login.html';
+							include 'phpAPI/home.php';
                         }
 						
-						include "html/footer.html";
+						include "assets/html/footer.html";
                     }
                     /* User has not logged in yet and has not send any post data */
                     else
                     {
 						//echo "<h1>User was not logged in yet!</h1>"; /////////////////////////////////delete
 						
-                        include 'html/nav.html';
+                        include 'assets/html/nav.html';
 
-                        include 'php/home.php';
+                        include 'phpAPI/home.php';
 						
-						include "html/footer.html";
+						include "assets/html/footer.html";
                     }
 ?>
 </body>
