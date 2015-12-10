@@ -21,6 +21,9 @@
                     require_once 'php/medoo.min.php';
                     $database = new medoo();
 					
+					require_once 'assets/php/functies.php';
+					require_once 'assets/php/registreren.php';
+					
                     /* Check if user is previously logged in */
                     if(isset($_SESSION['isLoggedIn'], $_SESSION['email']) && $_SESSION['isLoggedIn'] == "true")
                     {
@@ -31,10 +34,6 @@
                                     ]]);
 									
 								//print_r($user);
-
-
-	require_once 'assets/php/functies.php';
-	require_once 'assets/php/registreren.php';
 	
  
                         include 'html/nav.html';
