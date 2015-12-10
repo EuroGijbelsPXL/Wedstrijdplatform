@@ -21,6 +21,11 @@
 				controller: 'homeController',
 				controllerAs: 'homeCtrl'
 			})
+			.when('/spelpagina', {
+				templateUrl: 'views/spelpagina.php',
+				controller: 'spelController',
+				controllerAs: 'spelCtrl'
+			})
 			.when('/prijzen', {
 				templateUrl: 'views/prijzen.php',
 				controller: 'prijsController',
