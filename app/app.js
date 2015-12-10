@@ -21,6 +21,11 @@
 				controller: 'homeController',
 				controllerAs: 'homeCtrl'
 			})
+			.when('/spelpagina', {
+				templateUrl: 'views/spelpagina.php',
+				controller: 'spelController',
+				controllerAs: 'spelCtrl'
+			})
 			.when('/prijzen', {
 				templateUrl: 'views/prijzen.php',
 				controller: 'prijsController',
@@ -40,6 +45,11 @@
 				templateUrl: 'views/contact.php',
 				controller: 'contactController',
 				controllerAs: 'contactCtrl'
+			})	
+			.when('/registreren', {
+				templateUrl: 'views/registreren.php',
+				controller: 'homeController',
+				controllerAs: 'homeCtrl'
 			})
 			.otherwise({
 				redirectTo: '/'
