@@ -9,9 +9,13 @@
 <body onload="start();">
 
 <?php
-                        include 'html/nav.html';
-						include 'php/home.php';
-						include "html/footer.html";
+	require_once 'php/medoo.min.php';
+	require_once 'assets/php/functies.php';
+	require_once 'assets/php/registreren.php';
+	
+    include 'html/nav.html';
+	include 'php/home.php';
+	include "html/footer.html";
 ?>
 </body>
 </html>

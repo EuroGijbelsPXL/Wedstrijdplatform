@@ -15,22 +15,18 @@
 							<div class="ch-item ch-img-1 img-responsive">
 								<div class="ch-info">
 									<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-										<form class="form-signin" role="form" method="post" action="index.php">
-											<h1 class="form-signin-heading">Login</h1>
+										<form class="form-signin" role="form" method="post" action="#/home" onsubmit="return checkForm(this);">
+											<h1 class="form-signin-heading">Registreren</h1>
 											<label for="inputEmail" class="sr-only">Email adres</label>
 											<input name="inputEmail" type="email" id="inputEmail" class="form-control login-control" placeholder="Email adres" required autofocus>
-											<label for="inputPassword" class="sr-only">Wachtwoord</label>
-											<input name="inputPassword" type="password" id="inputPassword" class="form-control login-control" placeholder="Wachtwoord" required>
-											<div class="checkbox">
-											  <label>
-												<input type="checkbox" value="remember-me"> Mij onthouden
-											  </label>
-											</div>
-											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+											<label for="inputPassword1" class="sr-only">Wachtwoord</label>
+											<input name="inputPassword1" type="password" id="inputPassword1" class="form-control login-control" placeholder="Wachtwoord" required onchange="try{setCustomValidity('')}catch(e){}">
+											<label for="inputPassword2" class="sr-only">Wachtwoord herhalen</label>
+											<input name="inputPassword2" type="password" id="inputPassword2" class="form-control login-control" placeholder="Wachtwoord herhalen" required onchange="try{setCustomValidity('')}catch(e){}">
+											
+											<button class="btn btn-lg btn-primary btn-block" name="registreren" id="registreren" type="submit">Registreer</button>
 										</form>
 									</div>
-										<p><a href="">Wachtwoord vergeten</a></p>
-										<p><a href="#/registreren">Registreer</a></p>
 								</div>
 							</div>
 						</li>
@@ -50,3 +46,5 @@
 		  </div>
 		</div>
 </div>		
+
+
