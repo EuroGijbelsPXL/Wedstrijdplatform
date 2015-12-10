@@ -177,20 +177,20 @@ p{
 }
 
 .dutch_flag:hover{
-	background:url(../img/Taal/Belgium_flat.png);
+	background:url(../img/Taal/Dutch_Flag.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%; 
 }
 .dutch_flag:hover a{
-	z-index:-2000;
+	opacity:0;
 }
 .french_flag:hover{
-	background:url(../img/Taal/FRANCE.gif); 
+	background:url(../img/Taal/French_Flag.png); 
 	background-repeat: no-repeat;
 	background-size: 100% 100%; 
 }
 .french_flag:hover a{
-	z-index:-2000;
+	opacity:0;
 }
 .icon-bar {
   color: white;
@@ -273,7 +273,7 @@ p{
 }
 
 .ch-img-1 { 
-	background-image: url(../img/1.jpg);
+	background-image: url(../img/Banana.jpg);
 }
 
 .ch-img-2 { 
