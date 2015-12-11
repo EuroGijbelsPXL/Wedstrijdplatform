@@ -400,20 +400,27 @@ p{
  body{
 	background-color: red;
 }
+
+/* NAVIGATIE */
 .navbar-left{
 	font-size: 140%;
 }
 .navbar-right{
 	font-size: 110%;
-	
 }
+/* HOME PAGINA */
+/* PRIJZEN PAGINA */
+/* RECEPTEN PAGINA */
+/* PROFIEL PAGINA */
+/* CONTACT PAGINA */
 }
 
 @media (min-width: 321px) and (max-width: 1000px)
 {
-	 body{
+	body{
 	background-color: green;
 }
+/*NAVIGATIE*/
 .navbar-left{
 	font-size: 160%;
 }
@@ -421,7 +428,11 @@ p{
 	font-size: 150%;
 	padding-right: 0%;
 }
-
+/* HOME PAGINA */
+/* PRIJZEN PAGINA */
+/* RECEPTEN PAGINA */
+/* PROFIEL PAGINA */
+/* CONTACT PAGINA */
 }
 
 @media (min-width: 1000px) and (max-width: 1400px)
@@ -429,14 +440,18 @@ p{
 	 body{
 	background-color: blue;
 }
+/*NAVIGATIE*/
 .navbar-left{
 	font-size: 220%;
 }
 .navbar-right{
 	font-size: 200%;
 }
-
-
+/* HOME PAGINA */
+/* PRIJZEN PAGINA */
+/* RECEPTEN PAGINA */
+/* PROFIEL PAGINA */
+/* CONTACT PAGINA */
 }
 
 @media (min-width: 1400px)
@@ -444,16 +459,18 @@ p{
  body{
 	background-color: yellow;	
 }
+/*NAVIGATIE*/
 .navbar-left{
 	font-size: 250%;
 }
 .navbar-right{
 	font-size: 200%;
 }
-
-
-
-
+/* HOME PAGINA */
+/* PRIJZEN PAGINA */
+/* RECEPTEN PAGINA */
+/* PROFIEL PAGINA */
+/* CONTACT PAGINA */
 }
 
 

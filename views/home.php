@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-md-8 border">
 			<div class="row">
-				<div class=" col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 speluitleg border">
+				<div class=" col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 speluitleg border">
 					<h1>Speluitleg</h1>
 					<p> {{homeCtrl.uitleg}}</p>
 				</div>			
