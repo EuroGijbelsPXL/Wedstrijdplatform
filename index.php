@@ -17,15 +17,15 @@
 	
 	--> GAAT NIET! DE VIEWS WORDEN DYNAMISCH INGELADEN BINNEN INDEX.PHP!
 */
-					session_start();
+					/*session_start();
                     require_once 'assets/php/medoo.min.php';
                     $database = new medoo();
 					
 					require_once 'assets/php/functies.php';
-					require_once 'assets/php/registreren.php';
+					require_once 'assets/php/registreren.php';*/
 					
                     /* Check if user is previously logged in */
-                    if(isset($_SESSION['isLoggedIn'], $_SESSION['email']) && $_SESSION['isLoggedIn'] == "true")
+                    /*if(isset($_SESSION['isLoggedIn'], $_SESSION['email']) && $_SESSION['isLoggedIn'] == "true")
                     {
                         $user = $database->get(
                                     "gebruikers", "*", [
@@ -47,8 +47,8 @@
 						
 						//session_destroy(); //moet weg, staat hier enkel voor test
                     }
-                    /* User is not logged in yet */
-                    /* Check if any post data is send */
+                    // User is not logged in yet 
+                    // Check if any post data is send 
                     else if(isset($_POST['inputEmail'], $_POST['inputPassword']))
                     {
 						$database = new medoo();
@@ -56,13 +56,13 @@
                         $email = trim($_POST['inputEmail']);
 						                       
 						
-                        /* Check for correct email and password */
+                        // Check for correct email and password 
                         $emailExists = $database->count("gebruikers", [
                                     "AND" => [
                                     "email" => $email
                                     ]]);
 
-                        /* If exectly one user has been found */
+                        // If exectly one user has been found 
                         if($emailExists == 1)
                         {	
 							$enteredPassword = trim($_POST['inputPassword']);
@@ -87,7 +87,7 @@
 								echo "<h1>Normal user logged in.</h1>";
 								include 'php/home.php';*/
 							
-								header("Location: /wedstrijdplatform/#/spelpagina");
+						/*		header("Location: /wedstrijdplatform/#/spelpagina");
 							}
 							else{
 								include 'assets/html/nav.html';
@@ -105,9 +105,9 @@
 						
 						include "assets/html/footer.html";
                     }
-                    /* User has not logged in yet and has not send any post data */
+                    //User has not logged in yet and has not send any post data 
                     else
-                    {
+                    {*/
 						//echo "<h1>User was not logged in yet!</h1>"; /////////////////////////////////delete
 						
                         include 'assets/html/nav.html';
@@ -115,7 +115,7 @@
                         include 'phpAPI/home.php';
 						
 						include "assets/html/footer.html";
-                    }
+                    //}
 ?>
 </body>
 </html>

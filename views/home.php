@@ -6,6 +6,9 @@
 				<div class=" col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 speluitleg border">
 					<h1>Speluitleg</h1>
 					<p> {{homeCtrl.uitleg}}</p>
+					
+					
+					
 				</div>			
 			</div>
 			<div class="row hidden-xs">
@@ -15,22 +18,25 @@
 							<div class="ch-item ch-img-1 img-responsive">
 								<div class="ch-info">
 									<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-										<form class="form-signin" role="form" method="post" action="index.php">
+										<form class="form-signin" role="form" ng-submit="homeCtrl.getUserByEmail()">
 											<h1 class="form-signin-heading">Login</h1>
 											<div class="form-input-login">
-												<input name="inputEmail" type="email" id="inputEmail" class="form-control login-control" placeholder="Email adres" required autofocus>
-												<input name="inputPassword" type="password" id="inputPassword" class="form-control login-control" placeholder="Wachtwoord" required>
+												<input name="inputEmail" type="email" id="inputEmail" class="form-control login-control" placeholder="Email adres" required autofocus  ng-model="homeCtrl.email">
+												<input name="inputPassword" type="password" id="inputPassword" class="form-control login-control" placeholder="Wachtwoord" required ng-model="homeCtrl.ww">
+												<div class='alert alert-danger text-center' ng-show="homeCtrl.showError">Foute combinatie e-mail en wachtwoord</div>
+												
+												{{homeCtrl.errorMsg}}
 											</div>	
 											<div class="checkbox">
 											  <label>
 												<input type="checkbox" value="remember-me"> Mij onthouden </input>
 											  </label>
 											</div>
-											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+											<button class="btn btn-lg btn-primary btn-block" ng-click="" type="submit">Login</button>
 										</form>
 									</div>
 
-										<p><a href="#">Wachtwoord vergeten</a></p>
+										<p><a href="">Wachtwoord vergeten</a></p>
 										<p><a href="#/registreren">Registreer</a></p>
 
 								</div>
