@@ -26,7 +26,7 @@
 												<input type="checkbox" value="remember-me"> Mij onthouden </input>
 											  </label>
 											</div>
-											<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+											<button class="btn btn-lg btn-primary btn-block login-submit" type="submit">Login</button>
 										</form>
 									</div>
 
